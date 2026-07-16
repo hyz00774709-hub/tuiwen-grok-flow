@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TuiwenGrokShotControlCard",
+  "type": "object",
+  "required": [
+    "segment_id",
+    "time_range",
+    "narration",
+    "story_function",
+    "visual_task",
+    "subjects",
+    "ui_overlay",
+    "generation_mode",
+    "continuity",
+    "negative_rules"
+  ],
+  "properties": {
+    "segment_id": { "type": "string" },
+    "time_range": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "string" },
+        "end": { "type": "string" }
+      }
+    },
+    "narration": { "type": "string" },
+    "story_function": {
+      "type": "string",
+      "enum": ["hook", "setup", "crisis", "reversal", "power_up", "reveal", "payoff", "cliffhanger"]
+    },
+    "visual_task": { "type": "string" },
+    "subjects": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "ui_overlay": {
+      "type": "object",
+      "required": ["needed", "type", "content"],
+      "properties": {
+        "needed": { "type": "boolean" },
+        "type": { "type": "string" },
+        "content": { "type": "object" }
+      }
+    },
+    "generation_mode": {
+      "type": "string",
+      "enum": ["image_motion", "grok_video", "ui_overlay_only", "hybrid"]
+    },
+    "continuity": { "type": "string" },
+    "negative_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
+

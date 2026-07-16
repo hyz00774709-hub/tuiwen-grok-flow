@@ -1,0 +1,44 @@
+{
+  "project_name": "推文解说grok一键流程",
+  "version": "0.1.0",
+  "default_video": {
+    "aspect_ratio": "16:9",
+    "segment_seconds": 10,
+    "fps": 30,
+    "language": "zh-CN",
+    "platform": "douyin"
+  },
+  "model_policy": {
+    "image_model": "gpt-image-2",
+    "video_model": "grok",
+    "ui_text_rendering": "code_template_overlay",
+    "avoid_model_generated_chinese_text": true
+  },
+  "content_policy": {
+    "allowed_sources": [
+      "public_free_chapters",
+      "user_uploaded_text",
+      "authorized_text"
+    ],
+    "disallowed_sources": [
+      "vip_bypass",
+      "paywall_bypass",
+      "login_bypass"
+    ],
+    "rewrite_mode": "main_plot_preserved_original_commentary",
+    "sentence_similarity_limit": "avoid_close_paraphrase"
+  },
+  "google_drive": {
+    "root_folder_id": "10mfdJd3oaJd0a3GmFSS0QvPvUb9Y6EyP",
+    "folders": {
+      "references": "1UzANbZtZlFpQiVrGgn9IJEHtYzLluSTD",
+      "novel_free_text": "1OP13aiZFuCV4qCaq3x0EqezIg4FQ_5M1",
+      "scripts": "1FUgxdvzL9rFf8g0xrYaHfHo9kOlVJfpA",
+      "audio_srt": "1I1z6Xle9prLwUzAjlvxSeZMgqFAWSRfK",
+      "generated_media": "1Mfob0Z7KOaZYupujJYbk-q1_bRXCnPS6",
+      "deliverables": "1EgZq5t7xFfX7GYQte-P5tFjfafzw8qnZ",
+      "archive": "1uHurlPiTqBzMgdEtrl2jHRrhaOMkjGKt"
+    }
+  }
+}
+
