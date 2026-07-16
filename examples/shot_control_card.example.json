@@ -1,0 +1,35 @@
+{
+  "segment_id": "EP01_S001",
+  "time_range": {
+    "start": "00:00",
+    "end": "00:10"
+  },
+  "narration": "全城都以为主角只是普通人，直到系统面板在他眼前弹出，显示他的初始战力已经超过排行榜第一名。",
+  "story_function": "hook",
+  "visual_task": "用强光、城市俯拍和主角近景建立开场冲击；系统面板只呈现发光界面，不在画面内生成中文正文。",
+  "subjects": [
+    "主角",
+    "城市夜景",
+    "系统面板光效"
+  ],
+  "ui_overlay": {
+    "needed": true,
+    "type": "system_panel",
+    "content": {
+      "title": "初始战力检测",
+      "rank": "全服第 1",
+      "attack": "9999",
+      "status": "异常觉醒"
+    }
+  },
+  "generation_mode": "hybrid",
+  "continuity": "主角服装、发型和城市夜景色调后续段落保持一致；系统面板中文由后期模板叠加。",
+  "negative_rules": [
+    "不要生成乱码中文",
+    "不要分屏",
+    "不要白边",
+    "不要水印",
+    "不要字幕内嵌到画面",
+    "不要淡入淡出转场"
+  ]
+}
